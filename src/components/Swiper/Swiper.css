@@ -1,0 +1,22 @@
+
+@import "swiper/swiper.min.css";
+@import "swiper/components/navigation/navigation.min.css";
+@import "swiper/components/pagination/pagination.min.css";
+
+:root {
+  --swiper-theme-color: #FFBA08;
+  --swiper-navigation-size: 20px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 30px;
+}
+
+.swiper-container-hidden, .swiper-pagination-bullet  {
+  opacity: 0.8;
+  background: rgba(248, 247, 247, 0.6);
+}
+
+.swiper-pagination-bullet-active{
+  background: var(--swiper-theme-color);
+}
