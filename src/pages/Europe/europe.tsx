@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import { Banner } from "../../components/Banner/Banner";
 import { Header } from "../../components/Header/Header";
 
@@ -19,6 +19,26 @@ export function Europe() {
           rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste
         </Text>
       </Box>
+      <Flex justifyContent="space-around">
+        <Flex direction="column">
+          <Text fontWeight="bold" color="yellow.500">
+            50
+          </Text>
+          <Text>países</Text>
+        </Flex>
+        <Flex direction="column">
+          <Text fontWeight="bold" color="yellow.500">
+            60
+          </Text>
+          <Text>línguas</Text>
+        </Flex>
+        <Flex direction="column">
+          <Text fontWeight="bold" color="yellow.500">
+            24
+          </Text>
+          <Text>cidades +100</Text>
+        </Flex>
+      </Flex>
     </Flex>
   );
 }
