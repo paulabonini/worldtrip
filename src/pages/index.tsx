@@ -3,18 +3,20 @@ import Head from "next/head";
 import {
   Box,
   Flex,
+  Icon,
   Image,
-  ListItem,
   Text,
-  UnorderedList,
   useBreakpointValue,
+  VStack,
 } from "@chakra-ui/react";
 import { Swiper } from "../components/Swiper/Swiper";
+
+import { FaCircle } from "react-icons/fa";
 
 export default function Home() {
   const isWideVersion = useBreakpointValue({
     base: false,
-    lg: true,
+    xl: true,
   });
 
   return (
@@ -78,42 +80,68 @@ export default function Home() {
           </Box>
         </Box>
         <Box as="section">
-          <UnorderedList padding="8px 0" color="gray.100" fontWeight={500}>
-            <ListItem>vida noturna</ListItem>
-            <ListItem>praia</ListItem>
-            <ListItem>
-              <Text display="inline" alignSelf="flex-start">
-                moderno
-              </Text>
-            </ListItem>
-            <ListItem>
-              <Text display="inline" alignSelf="flex-end">
-                clássico
-              </Text>
-            </ListItem>
+          <Flex
+            direction="column"
+            justify="space-around"
+            align="center"
+            py="5rem"
+            w="100%"
+          >
+            <Flex align="center" justifyContent="space-between">
+              <Box>
+                <Icon
+                  as={FaCircle}
+                  fontSize="0.5rem"
+                  color="yellow.500"
+                  mr={2}
+                />
+                <Text>vida noturna</Text>
+              </Box>
+              <Box>
+                <Icon
+                  as={FaCircle}
+                  fontSize="0.5rem"
+                  color="yellow.500"
+                  mr={2}
+                />
+                <Text>praia</Text>
+              </Box>
+            </Flex>
 
-            <ListItem>
-              <Text textAlign="center" marginTop="8px">
-                e mais...
-              </Text>
-            </ListItem>
-          </UnorderedList>
+            <Flex align="center" justifyContent="space-between">
+              <Icon as={FaCircle} fontSize="0.5rem" color="yellow.500" mr={2} />
+              <Text>moderno</Text>
+              <Icon as={FaCircle} fontSize="0.5rem" color="yellow.500" mr={2} />
+              <Text>clássico</Text>
+            </Flex>
+
+            <Flex align="center">
+              <Icon as={FaCircle} fontSize="0.5rem" color="yellow.500" mr={2} />
+              <Text>e mais...</Text>
+            </Flex>
+          </Flex>
           <Box
             _after={{ content: `""` }}
             border="1px solid"
             borderColor="gray.100"
             width="20%"
-            margin="16px auto"
+            maxWidth="90px"
+            margin="24px auto"
             opacity="0.5"
           >
             <span></span>
           </Box>
-          <Box fontWeight={500} textAlign="center" color="gray.100">
+          <Box
+            fontWeight={500}
+            fontSize={["20px", "20px", "36px"]}
+            textAlign="center"
+            color="gray.100"
+          >
             <Text>Vamos nessa?</Text>
             <Text>Então escolha seu continente</Text>
           </Box>
         </Box>
-        <Box as="section" marginTop="16px" width={["100%", "50%"]}>
+        <Box as="section" margin="24px auto" width={["100%", "50%"]}>
           <Swiper />
         </Box>
       </Flex>
