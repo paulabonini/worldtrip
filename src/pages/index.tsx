@@ -12,6 +12,7 @@ import {
 import { Swiper } from "../components/Swiper/Swiper";
 
 import { FaCircle } from "react-icons/fa";
+import { Header } from "../components/Header/Header";
 
 export default function Home() {
   const isWideVersion = useBreakpointValue({
@@ -25,14 +26,7 @@ export default function Home() {
         <title>Worldtrip | Home</title>
       </Head>
       <Flex direction="column">
-        <Box as="header" padding={4} alignSelf="center">
-          <Image
-            width={["81px", "81px", "184.06px"]}
-            height={["20px", "20px", "45.92px"]}
-            src="/logo.svg"
-            alt="World trip logo"
-          />
-        </Box>
+        <Header />
         <Box
           as="section"
           backgroundImage="url(/banner.png)"
