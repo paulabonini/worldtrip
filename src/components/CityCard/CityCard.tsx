@@ -9,7 +9,7 @@ interface CityCardProps {
 
 export function CityCard({ city, country, image, alt }: CityCardProps) {
   return (
-    <Box margin="16px auto" maxWidth="256">
+    <Box margin={["16px auto", "1%"]} maxWidth="256">
       <Image w="100%" src="/images/london.png" alt="London" />
       <Flex
         border="1px solid"

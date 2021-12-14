@@ -12,8 +12,8 @@ export function Banner({ image, alt, title }: BannerProps) {
       <Image w="100%" src={image} alt={alt} />
       <Box
         position="absolute"
-        top={["6%", "21%"]}
-        left={["50%", "16%"]}
+        top={["6%", "8%", "21%", "33%"]}
+        left={["50%", "50%", "16%"]}
         transform="translate(-50%, -50%)"
         textAlign="center"
         color="white.50"
