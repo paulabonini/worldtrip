@@ -2,11 +2,15 @@ import { Box, Flex, Text, Image } from "@chakra-ui/react";
 import { Banner } from "../../components/Banner/Banner";
 import { CityCard } from "../../components/CityCard/CityCard";
 import { Header } from "../../components/Header/Header";
+import { IoIosArrowBack } from "react-icons/io";
 
 export function Europe() {
   return (
     <Flex direction="column">
       <Header />
+      <Box as="a" href="/" position="absolute" margin="20px">
+        <IoIosArrowBack />
+      </Box>
       <Banner
         image="/images/europe-banner.png"
         alt="Europe Banner"
