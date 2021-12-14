@@ -107,13 +107,13 @@ export default function Home() {
           ) : (
             <Flex
               direction="column"
-              justify="space-around"
-              align="center"
-              py="5rem"
-              w="100%"
+              margin="1rem auto"
+              alignItems="center"
+              maxWidth="200px"
+              flexWrap="wrap"
             >
-              <Flex align="center" justifyContent="space-between">
-                <Box>
+              <Flex justifyContent="space-between" flexWrap="wrap">
+                <Flex alignItems="center" justifyContent="center">
                   <Icon
                     as={FaCircle}
                     fontSize="0.5rem"
@@ -121,8 +121,8 @@ export default function Home() {
                     mr={2}
                   />
                   <Text>vida noturna</Text>
-                </Box>
-                <Box>
+                </Flex>
+                <Flex alignItems="center" justifyContent="center">
                   <Icon
                     as={FaCircle}
                     fontSize="0.5rem"
@@ -130,27 +130,28 @@ export default function Home() {
                     mr={2}
                   />
                   <Text>praia</Text>
-                </Box>
+                </Flex>
+                <Flex alignItems="center" justifyContent="center">
+                  <Icon
+                    as={FaCircle}
+                    fontSize="0.5rem"
+                    color="yellow.500"
+                    mr={2}
+                  />
+                  <Text>moderno</Text>
+                </Flex>
+                <Flex alignItems="center" justifyContent="center">
+                  <Icon
+                    as={FaCircle}
+                    fontSize="0.5rem"
+                    color="yellow.500"
+                    mr={2}
+                  />
+                  <Text>clássico</Text>
+                </Flex>
               </Flex>
 
-              <Flex align="center" justifyContent="space-between">
-                <Icon
-                  as={FaCircle}
-                  fontSize="0.5rem"
-                  color="yellow.500"
-                  mr={2}
-                />
-                <Text>moderno</Text>
-                <Icon
-                  as={FaCircle}
-                  fontSize="0.5rem"
-                  color="yellow.500"
-                  mr={2}
-                />
-                <Text>clássico</Text>
-              </Flex>
-
-              <Flex align="center">
+              <Flex alignItems="center">
                 <Icon
                   as={FaCircle}
                   fontSize="0.5rem"
