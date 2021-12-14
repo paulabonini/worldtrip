@@ -74,46 +74,93 @@ export default function Home() {
           </Box>
         </Box>
         <Box as="section">
-          <Flex
-            direction="column"
-            justify="space-around"
-            align="center"
-            py="5rem"
-            w="100%"
-          >
-            <Flex align="center" justifyContent="space-between">
+          {isWideVersion ? (
+            <Flex
+              margin="6rem 0"
+              alignItems="center"
+              justifyContent="space-evenly"
+              textAlign="center"
+              fontSize="24"
+              fontWeight="600"
+            >
               <Box>
-                <Icon
-                  as={FaCircle}
-                  fontSize="0.5rem"
-                  color="yellow.500"
-                  mr={2}
-                />
+                <Image src="/icons/cocktail.svg" alt="Cocktail" mb="1rem" />
                 <Text>vida noturna</Text>
               </Box>
               <Box>
+                <Image src="/icons/surf.svg" alt="Surf" mb="1rem" />
+                <Text>praia</Text>
+              </Box>
+              <Box>
+                <Image src="/icons/building.svg" alt="Building" mb="1rem" />
+                <Text>moderno</Text>
+              </Box>
+              <Box>
+                <Image src="/icons/museum.svg" alt="museum" mb="1rem" />
+                <Text>clássico</Text>
+              </Box>
+              <Box>
+                <Image src="/icons/earth.svg" alt="earth" mb="1rem" />
+                <Text>e mais...</Text>
+              </Box>
+            </Flex>
+          ) : (
+            <Flex
+              direction="column"
+              justify="space-around"
+              align="center"
+              py="5rem"
+              w="100%"
+            >
+              <Flex align="center" justifyContent="space-between">
+                <Box>
+                  <Icon
+                    as={FaCircle}
+                    fontSize="0.5rem"
+                    color="yellow.500"
+                    mr={2}
+                  />
+                  <Text>vida noturna</Text>
+                </Box>
+                <Box>
+                  <Icon
+                    as={FaCircle}
+                    fontSize="0.5rem"
+                    color="yellow.500"
+                    mr={2}
+                  />
+                  <Text>praia</Text>
+                </Box>
+              </Flex>
+
+              <Flex align="center" justifyContent="space-between">
                 <Icon
                   as={FaCircle}
                   fontSize="0.5rem"
                   color="yellow.500"
                   mr={2}
                 />
-                <Text>praia</Text>
-              </Box>
-            </Flex>
+                <Text>moderno</Text>
+                <Icon
+                  as={FaCircle}
+                  fontSize="0.5rem"
+                  color="yellow.500"
+                  mr={2}
+                />
+                <Text>clássico</Text>
+              </Flex>
 
-            <Flex align="center" justifyContent="space-between">
-              <Icon as={FaCircle} fontSize="0.5rem" color="yellow.500" mr={2} />
-              <Text>moderno</Text>
-              <Icon as={FaCircle} fontSize="0.5rem" color="yellow.500" mr={2} />
-              <Text>clássico</Text>
+              <Flex align="center">
+                <Icon
+                  as={FaCircle}
+                  fontSize="0.5rem"
+                  color="yellow.500"
+                  mr={2}
+                />
+                <Text>e mais...</Text>
+              </Flex>
             </Flex>
-
-            <Flex align="center">
-              <Icon as={FaCircle} fontSize="0.5rem" color="yellow.500" mr={2} />
-              <Text>e mais...</Text>
-            </Flex>
-          </Flex>
+          )}
           <Box
             _after={{ content: `""` }}
             border="1px solid"
