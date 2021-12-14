@@ -30,7 +30,7 @@ export function Swiper() {
 
       <SwiperSlide style={{ position: "relative" }}>
         <SwiperItem
-          path="/Asia"
+          path="/404"
           image="/images/asia.jpg"
           imageAlt="Asia"
           title="Ásia"
@@ -40,7 +40,7 @@ export function Swiper() {
 
       <SwiperSlide style={{ position: "relative" }}>
         <SwiperItem
-          path="/America"
+          path="/404"
           image="/images/eua.jpg"
           imageAlt="America"
           title="América"
@@ -50,7 +50,7 @@ export function Swiper() {
 
       <SwiperSlide style={{ position: "relative" }}>
         <SwiperItem
-          path="/Africa"
+          path="/404"
           image="/images/africa.jpg"
           imageAlt="Africa"
           title="Africa"
@@ -60,7 +60,7 @@ export function Swiper() {
 
       <SwiperSlide style={{ position: "relative" }}>
         <SwiperItem
-          path="/Oceania"
+          path="/404"
           image="/images/oceania.jpg"
           imageAlt="Oceania"
           title="Oceania"
