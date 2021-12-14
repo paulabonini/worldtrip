@@ -4,7 +4,6 @@ export function NotFound() {
   return (
     <>
       <Flex
-        padding="1rem 0"
         direction="column"
         justifyContent="center"
         alignItems="center"
@@ -12,7 +11,7 @@ export function NotFound() {
         bgColor="gray.50"
         h="100vh"
       >
-        <Image width="50%" src="/images/workers.jpg" />
+        <Image width="50%" marginTop="100px" src="/images/workers.jpg" />
 
         <Box
           position="absolute"
@@ -29,7 +28,7 @@ export function NotFound() {
           </Text>
         </Box>
 
-        <Button as="a" href="/" colorScheme="blue">
+        <Button as="a" href="/" colorScheme="blue" top="-50px">
           Voltar
         </Button>
       </Flex>
