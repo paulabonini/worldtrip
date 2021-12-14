@@ -12,13 +12,17 @@ export function Banner({ image, alt, title }: BannerProps) {
       <Image w="100%" src={image} alt={alt} />
       <Box
         position="absolute"
-        top="6%"
-        left="50%"
+        top={["6%", "21%"]}
+        left={["50%", "16%"]}
         transform="translate(-50%, -50%)"
         textAlign="center"
         color="white.50"
       >
-        <Text fontSize="28" letterSpacing="wider" fontWeight="semibold">
+        <Text
+          fontSize={["28", "42"]}
+          letterSpacing="wider"
+          fontWeight="semibold"
+        >
           {title}
         </Text>
       </Box>
