@@ -9,11 +9,12 @@ interface CityCardProps {
 
 export function CityCard({ city, country, image, alt }: CityCardProps) {
   return (
-    <Box margin="0 auto" maxWidth="256">
+    <Box margin="16px auto" maxWidth="256">
       <Image w="100%" src="/images/london.png" alt="London" />
       <Flex
         border="1px solid"
         borderColor="yellow.500"
+        borderRadius="4px"
         borderTop="0"
         padding="12px 0"
         justifyContent="space-around"
