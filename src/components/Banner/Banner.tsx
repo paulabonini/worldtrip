@@ -12,7 +12,7 @@ export function Banner({ image, alt, title }: BannerProps) {
       <Image w="100%" src={image} alt={alt} />
       <Box
         position="absolute"
-        top="35%"
+        top="6%"
         left="50%"
         transform="translate(-50%, -50%)"
         textAlign="center"
